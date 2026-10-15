@@ -1,0 +1,58 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Fira Sans", "Droid Sans", "Helvetica Neue", "Noto Sans Devanagari", "Mangal", sans-serif;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Navbar */
+.navbar .nav-link.active {
+  font-weight: 600;
+}
+
+#langSelect {
+  min-width: 110px;
+}
+
+/* Product cards */
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card img {
+  height: 180px;
+  object-fit: contain;
+}
+
+/* Slider */
+#mainSlider .carousel-item img {
+  max-height: 480px;
+  object-fit: cover;
+}
+
+/* Status messages */
+.status-box {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Cart modal */
+.cart-row + .cart-row {
+  border-top: 1px solid #dee2e6;
+}
+
+.cart-qty {
+  min-width: 1.5rem;
+  text-align: center;
+  display: inline-block;
+}
